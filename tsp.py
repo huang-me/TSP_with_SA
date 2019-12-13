@@ -1,5 +1,6 @@
 import random
 import math
+import time
 
 def calculate():
 
@@ -19,6 +20,7 @@ if __name__ == "__main__":
 	global n_max
 	global city
 	global order
+	start = time.time()
 
 	#initialize parameter
 	n = 0
@@ -68,3 +70,4 @@ if __name__ == "__main__":
 	# print result
 	print(min)
 	print(order)
+	print time.time()-start , 'seconds'
